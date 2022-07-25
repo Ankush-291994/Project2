@@ -1,0 +1,39 @@
+<html>
+    <head>    
+        <title> Employee Atytrition</title>
+    </head>
+    <body>
+        <h1>Hello World Employee Atytrition</h1>
+        <p></p>
+        
+        <form action="{{ url_for('predict')}}" method="post">
+            <label>Age</label>
+            <input type="number" name="Age" placeholder="Age" required="required" />
+            <br>
+            <label>StockOptionLevel</label>
+            <input type="number" name="StockOptionLevel" placeholder="StockOptionLevel" required="required" />
+            <br>    <label>RelationshipSatisfaction</label>
+            <input type="number" name="RelationshipSatisfaction" placeholder="RelationshipSatisfaction" required="required" />
+            <br><label>TotalWorkingYears</label>
+            <input type="number" name="TotalWorkingYears" placeholder="TotalWorkingYears" required="required" />
+            <br><label> WorkLifeBalance</label>
+            <input type="number" name="WorkLifeBalance" placeholder="WorkLifeBalance" required="required" />
+            <br><label>YearsAtCompany</label>
+            <input type="number" name="YearsAtCompany" placeholder="YearsAtCompany" required="required" />
+            <br><label>YearsInCurrentRole</label>
+            <input type="number" name="YearsInCurrentRole" placeholder="YearsInCurrentRole" required="required" />
+            <br><label>OverTime_Yes</label>
+            <input type="number" name="OverTime_Yes" placeholder="OverTime_Yes" required="required" />
+            <br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+    
+       <br>
+       <br>
+       {{ result }}
+    
+  
+    
+
+    </body>
+</html>
